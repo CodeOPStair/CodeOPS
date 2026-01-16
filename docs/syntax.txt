@@ -1,0 +1,66 @@
+CodeOPS Syntax Guide
+
+Overview
+CodeOPS is an operations-oriented programming language.
+Everything revolves around operations and execution flow.
+
+File extension
+.ops
+
+Variables
+Variables are defined using the set keyword.
+
+Syntax:
+set name = "value"
+
+Example:
+set app = "CodeOPS"
+set env = "prod"
+
+Variables can be used inside commands with this syntax:
+${variable_name}
+
+Commands
+Commands execute shell instructions.
+
+Syntax:
+run "command"
+
+Example:
+run "echo Hello World"
+
+Operations
+Operations group multiple commands.
+
+Syntax:
+op operationName {
+run "command"
+run "another command"
+}
+
+Operations are not executed automatically.
+
+Calling operations
+Operations are executed by calling them like functions.
+
+Syntax:
+operationName()
+
+Example:
+start()
+
+Execution order
+
+1. Variables are registered
+2. Operations are registered
+3. Instructions are executed in order
+4. Operation calls run their internal commands
+
+Errors
+If CodeOPS finds an unknown token or operation, execution stops
+and an error message is shown with line information when possible.
+
+Philosophy
+Less ceremony.
+More action.
+Everything is an operation.
