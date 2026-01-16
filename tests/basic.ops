@@ -1,0 +1,13 @@
+set app = "CodeOPS"
+set env = "dev"
+
+op build {
+run "echo Building ${app}"
+}
+
+op start {
+run "echo Starting ${app} in ${env}"
+}
+
+build()
+start()
