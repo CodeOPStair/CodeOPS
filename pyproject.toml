@@ -1,13 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "codeops"
 version = "0.1.0"
-description = "Operations-oriented programming language"
+description = "Operations-oriented programming language for automation and task flows"
+readme = "README.txt"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
 authors = [
 { name = "CodeOPS Contributors" }
 ]
-readme = "README.txt"
-license = { file = "LICENSE" }
-requires-python = ">=3.8"
+keywords = ["language", "automation", "devops", "scripting"]
+classifiers = [
+"Development Status :: 3 - Alpha",
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: Mozilla Public License 2.0",
+"Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "[https://github.com//CodeOPS](https://github.com/your-user/CodeOPS)"
+Repository = "[https://github.com/your-user/CodeOPS](https://github.com/your-user/CodeOPS)"
+Issues = "[https://github.com/your-user/CodeOPS/issues](https://github.com/your-user/CodeOPS/issues)"
 
 [project.scripts]
 codeops = "cli.codeops:main"
+
+[tool.setuptools]
+packages = ["core", "cli"]
+
+[tool.setuptools.package-data]
+core = ["*.txt"]
