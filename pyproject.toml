@@ -1,0 +1,13 @@
+[project]
+name = "codeops"
+version = "0.1.0"
+description = "Operations-oriented programming language"
+authors = [
+{ name = "CodeOPS Contributors" }
+]
+readme = "README.txt"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+[project.scripts]
+codeops = "cli.codeops:main"
