@@ -21,9 +21,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "[https://github.com//CodeOPS](https://github.com/your-user/CodeOPS)"
-Repository = "[https://github.com/your-user/CodeOPS](https://github.com/your-user/CodeOPS)"
-Issues = "[https://github.com/your-user/CodeOPS/issues](https://github.com/your-user/CodeOPS/issues)"
+Homepage = "[https://github.com/CodeOPStair/CodeOPS](https://github.com/CodeOPStair/CodeOPS)"
+Repository = "[https://github.com/CodeOPStair/CodeOPS](https://github.com/CodeOPStair/CodeOPS)"
+Issues = "[https://github.com/CodeOPStair/CodeOPS/issues](https://github.com/CodeOPStair/CodeOPS/issues)"
 
 [project.scripts]
 codeops = "cli.codeops:main"
